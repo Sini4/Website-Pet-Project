@@ -1,3 +1,3 @@
 # Website-Pet-Project
 
-Template link: https://ua.weblium.com/templatesr
+Template link: https://car-parts-seller.weblium.site/
