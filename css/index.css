@@ -1,3 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 320px;
+}
+
+header {
+    margin: auto;
+}
+
+main {
+    margin: left;
+}
+
+footer {
+    margin: auto;
+}
+
+:root {
+    --request_a_quote_button_color: #ef3d34;
+    --white_border: #ffff;
+    --white_text_color: #ffff;
+}
+
+.car-spare-parts-black_logo {
+    height: 140px;
+    width: 140px;
+    margin-left: 30px;
+}
+
+.header_navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.upper_adv {
+    background-image: url(/img/upper_background_crop_for_tiny_screen.webp);
+    color: white;
+}
+
+.upper_adv_text {
+    font-size: 60px;
+    padding-top: 110px;
+    padding-left: 25px;
+}
+
+.upper_banner_text {
+    font-size: 22px;
+    padding-top: 44px;
+    padding-left: 25px;
+}
+
+.request_a_quote {
+    width: 210px;
+    height: 65px;
+    margin-left: 20px;
+    margin-top: 35px;
+    font-size: 14px;
+    background-color: var(--request_a_quote_button_color);
+    border: 3px solid var(--white_border);
+    color: var(--white_text_color);
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.upper_contact_info_block {
+    border: 3px solid/*var(--white_border)*/
+    blue;
+    padding-bottom: 70px;
+    width: 250px;
+    margin-left: 30px;
+}
+
 .footer {
     background-image: url(/img/footer_background.webp);
 }
