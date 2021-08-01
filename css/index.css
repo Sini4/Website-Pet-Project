@@ -17,9 +17,26 @@ footer {
 }
 
 :root {
+    /* Change some variables to more special for selectors */
     --request_a_quote_button_color: #ef3d34;
     --white_border: #ffff;
     --white_text_color: #ffff;
+    --red_text_color: #ef3e34;
+    --light_gray_text_color: #6d6d6d;
+    --browse_parts_button_color: #ffff;
+    --browse_parts_border_color: #ef3e34;
+    --text_under_logo_footer: #ffff;
+    /**/
+    --nav_footer_color: #ffff;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .car-spare-parts-black_logo {
@@ -64,15 +81,75 @@ footer {
 }
 
 .upper_contact_info_block {
-    border: 3px solid/*var(--white_border)*/
-    blue;
-    padding-bottom: 70px;
+    border: 3px solid var(--white_border);
+    padding-bottom: 80px;
     width: 250px;
     margin-left: 30px;
 }
 
+.who_we_are_text {
+    color: var(--red_text_color);
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.professional_car_parts_seller_text {
+    font-weight: bold;
+    font-size: 40px;
+    padding-left: 20px;
+}
+
+.who_we_are_text_about {
+    color: var(--light_gray_text_color);
+    padding-left: 20px;
+}
+
+.browse_the_parts_button {
+    width: 210px;
+    height: 65px;
+    margin-left: 20px;
+    margin-top: 35px;
+    font-size: 14px;
+    background-color: var(--browse_parts_button_color);
+    border: 3px solid var(--browse_parts_border_color);
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.browse_the_parts_button_text {
+    padding-right: 115px;
+    padding-top: 10px;
+}
+
 .footer {
     background-image: url(/img/footer_background.webp);
+}
+
+.footer_logo {
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.text_under_logo_footer {
+    color: var(--text_under_logo_footer);
+    font-size: 15px;
+    text-align: center;
+}
+
+.about_us_section_footer_nav {
+    text-align: center;
+    color: var(--nav_footer_color);
+}
+
+.about_us_section_footer_nav:link {
+    text-decoration: none;
+}
+
+.media_section_footer_nav {
+    text-align: center;
+    color: var(--nav_footer_color);
 }
 
 .badge {
