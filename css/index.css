@@ -25,9 +25,11 @@ footer {
     --light_gray_text_color: #6d6d6d;
     --browse_parts_button_color: #ffff;
     --browse_parts_border_color: #ef3e34;
-    --text_under_logo_footer: #ffff;
+    --request_section_color: #ef3e34;
     /**/
+    --text_under_logo_footer: #ffff;
     --nav_footer_color: #ffff;
+    --red_border: #ef3e34;
 }
 
 li {
@@ -121,6 +123,176 @@ ul {
     padding-top: 10px;
 }
 
+.why_choose_us_text {
+    color: var(--red_text_color);
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.we_are_best_text {
+    color: var(--light_gray_text_color);
+    padding-left: 20px;
+}
+
+.spare_parts_text {
+    color: var(--red_text_color);
+}
+
+.car_mini {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.accumulator_mini {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.wrench_mini {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.grid_list_advantages {
+    display: grid;
+}
+
+.car_parts {
+    background-image: url(/img/popular_parts_background.webp);
+}
+
+.car_parts_text {
+    color: var(--red_text_color);
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.most_popular_car_parts {
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+}
+
+.what_we_offer {
+    background-image: url(/img/car_companies_list.webp);
+}
+
+.select_by_brand {
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    color: var(--white_text_color);
+}
+
+.what_we_offer_text {
+    color: var(--red_text_color);
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.request {
+    background-color: var(--request_section_color);
+}
+
+.request_text {
+    color: var(--white_text_color);
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.specific_part_order_text {
+    color: var(--white_text_color);
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.specific_spare_part {
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    color: var(--white_text_color);
+}
+
+.request_parts_button {
+    width: 210px;
+    height: 65px;
+    margin-left: 20px;
+    margin-top: 35px;
+    font-size: 14px;
+    background-color: var(--request_a_quote_button_color);
+    border: 3px solid var(--white_border);
+    color: var(--white_text_color);
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.request_parts_button_text {
+    padding-right: 110px;
+    padding-top: 15px;
+}
+
+.how_we_work_text {
+    color: var(--red_text_color);
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.our_working_process {
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+}
+
+.testimonials {
+    background-image: url(/img/testimonials_background.webp);
+}
+
+.testimonials_text {
+    color: var(--red_text_color);
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.what_people_say {
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+}
+
+.first_customer {
+    background-color: white;
+    padding-left: 20px;
+}
+
+.first_customer_position {
+    color: var(--light_gray_text_color);
+}
+
+.first_customer_img {
+    border-radius: 50px;
+}
+
+.second_customer {
+    background-color: white;
+    padding-left: 20px;
+}
+
+.second_customer_position {
+    color: var(--light_gray_text_color);
+}
+
+.third_customer {
+    background-color: white;
+    padding-left: 20px;
+}
+
+.third_customer_position {
+    color: var(--light_gray_text_color);
+}
+
 .footer {
     background-image: url(/img/footer_background.webp);
 }
@@ -150,6 +322,34 @@ ul {
 .media_section_footer_nav {
     text-align: center;
     color: var(--nav_footer_color);
+}
+
+.facebook_logo_footer {
+    height: 30px;
+    width: 30px;
+}
+
+.instargam_logo_footer {
+    height: 30px;
+    width: 30px;
+}
+
+.youtube_logo_footer {
+    height: 30px;
+    width: 40px;
+}
+
+.subscribe_button {
+    width: 210px;
+    height: 65px;
+    margin-left: 20px;
+    margin-top: 35px;
+    font-size: 14px;
+    background-color: var(--red_border);
+    border: 3px solid var(--white_border);
+    color: var(--white_text_color);
+    font-weight: bold;
+    margin-bottom: 45px;
 }
 
 .badge {
