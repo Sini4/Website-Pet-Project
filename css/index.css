@@ -20,6 +20,7 @@ footer {
     /* Change some variables to more special for selectors */
     --request_a_quote_button_color: #ef3d34;
     --white_border: #ffff;
+    --black_border_for_advantiges: #0000;
     --white_text_color: #ffff;
     --red_text_color: #ef3e34;
     --light_gray_text_color: #6d6d6d;
@@ -86,7 +87,27 @@ ul {
     border: 3px solid var(--white_border);
     padding-bottom: 80px;
     width: 250px;
+    height: 240px;
     margin-left: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.call_us_upper_info {
+    padding-left: 50px;
+    padding-top: 40px;
+    font-weight: bold;
+}
+
+.adress_upper_info {
+    padding-left: 50px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.call_us_upper_info_call_us_text,
+.call_us_upper_info_we_are_here_text {
+    font-size: 22px;
+    text-decoration: underline;
 }
 
 .who_we_are_text {
@@ -129,9 +150,45 @@ ul {
     padding-left: 20px;
 }
 
+.grid_list_advantages {
+    display: inline-grid;
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
+.vast_experience,
+.rare_parts,
+.individual_approach {
+    display: flex;
+    padding-bottom: 22px;
+}
+
+.car_mini_img_advantages,
+.accumulator_mini_img_advantages,
+.wrench_mini_img_advantages {
+    height: 80px;
+    width: 80px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
 .we_are_best_text {
+    padding-top: 20px;
     color: var(--light_gray_text_color);
     padding-left: 20px;
+    font-size: 20px;
+}
+
+.vast_experience_h3_text,
+.rare_parts_h3_text,
+.individual_approach_h3_text {
+    font-weight: bold;
+}
+
+.vast_experience_text,
+.rare_parts_text,
+.individual_approach_text {
+    color: var(--light_gray_text_color);
 }
 
 .spare_parts_text {
