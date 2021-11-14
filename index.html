@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Spare Parts</title>
+    <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -109,15 +113,19 @@
         <div class="car_parts">
             <p class="car_parts_text">/ CAR PARTS</p>
             <!-- red color -->
-            <h2 class="most_popular_car_parts">Most Popular Carparts</h2>
+            <h2 class="most_popular_car_parts_h2_text">Most Popular Carparts</h2>
 
-            <!-- CAROUSEL JS SOON -->
+            <div class="parts-carousel">
+                <button class="slide-prev">&#8678</button>
+                <div class="carousel-container"></div>
+                <button class="slide-next">&#8680</button>
+            </div>
         </div>
 
         <div class="what_we_offer">
             <p class="what_we_offer_text">/ WHAT WE OFFER</p>
             <!-- red color -->
-            <h2 class="select_by_brand">Select By Brand</h2>
+            <h2 class="select_by_brand_h2_text">Select By Brand</h2>
 
             <!-- JS LIST SOON-->
         </div>
@@ -138,9 +146,10 @@
             <p class="how_we_work_text">/ HOW WE WORK</p>
             <!-- red color -->
             <h2 class="our_working_process">Our Working Process</h2>
-            <img src="img/working_process_tyres.webp" alt="tyres work" class="tyres_work">
-            <img src="img/working_process_tech.webp" alt="tech work">
-
+            <img src="img/working_process_tyres_short.webp" alt="tyres work" class="tyres_work">
+            <img src="img/working_process_tech_short.webp" alt="tech work" class="tech_work">
+            <img src="img/how_we_work_list_part1.webp" alt="how we work part 1" class="how_we_work_list_part1">
+            <img src="img/how_we_work_list_part2.webp" alt="how we work part 2" class="how_we_work_list_part2">
             <!-- OTHER PART MAYBE WILL BE A PIC OR WITH JS-->
         </div>
 
@@ -149,35 +158,40 @@
             <!-- red color -->
             <h2 class="what_people_say">What People Say</h2>
             <div class="testimonials_list">
-
+                <img src="img/testimonials_ann.webp" alt="testimonials from customer Ann" class="first_testiminials_ann">
+                <img src="img/testimonials_jeff.webp" alt="testimonials from customer Jeff" class="second_testiminials_jeff">
+                <img src="img/testimonials_dean.webp" alt="testimonials from customer Dean" class="third_testimonials_dean">
+                <!--
                 <div class="first_customer">
                     <h3 class="first_customer_name">Ann Golden,</h3>
                     <p class="first_customer_position">/ CLIENT OF COMPANY</p>
-                    <!-- gray color -->
                     <img src="img/customers/first_customer.png" alt="yound woman drives" class="first_customer_img">
                     <p class="first_customer_text">With SpareParts, it is no longer a<br>problem to find any auto parts. I have<br>been ordering parts here for a year now,<br>and I am completely satisfied with the
                         <br>service. All parts are always in stock,<br>managers help to solve any problem.
                     </p>
                 </div>
+                -->
 
+                <!--
                 <div class="second_customer">
                     <h3 class="second_customer_name">Jeff Madisson,</h3>
                     <p class="second_customer_position">/ CLIENT OF COMPANY</p>
-                    <!-- gray color -->
                     <img src="img/customers/second_customer.png" alt="man drives audi">
                     <p class="second_customer_text">My car was produced almost 40 years<br>ago. And every year, it is more and more<br>difficult to find spare parts for it. At<br>SpareParts, I was able to immediately
                         <br>find a repair kit for the engine for a really<br>low price. Thank you very much!
                     </p>
                 </div>
+                -->
 
+                <!--
                 <div class="third_customer">
                     <h3 class="third_customer_name">Dean Seanic,</h3>
                     <p class="third_customer_position">/ CLIENT OF COMPANY</p>
-                    <!-- gray color -->
                     <img src="img/customers/third_customer.png" alt="man drives SUV">
                     <p class="third_customer_text">I inherited my father's Chevrolet Impala.<br>Everyone knows what a great car this is.<br>However, I faced a very high cost of<br>spare parts for this model. Fortunately, I<br>saw an ad - SpareParts offered very<br>competitive prices
                         for bearings.</p>
                 </div>
+                -->
             </div>
         </div>
 
@@ -235,7 +249,7 @@
                 <form id="faq_form" action="https://formspree.io/f/mayaewbr" method="POST">
 
                     <div class="email_input_form">
-                        <input type="text" name="Email" placeholder="     Email" class="email_input" />
+                        <input type="text" name="Email" placeholder="     Email*" class="email_input" />
                     </div>
 
                     <div>
@@ -248,7 +262,7 @@
 
         <div class="copyright_info">
 
-            <p class="copyright">&copy; Created by</p>
+            <p class="copyright">&copy; Created by Vladyslav S.</p>
             <p class="all_rights_reserved">All rights Reserved</p>
         </div>
 

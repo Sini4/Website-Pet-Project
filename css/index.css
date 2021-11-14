@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     width: 320px;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -144,6 +145,10 @@ ul {
     padding-top: 10px;
 }
 
+.why_choose_us {
+    padding-bottom: 100px;
+}
+
 .why_choose_us_text {
     color: var(--red_text_color);
     font-weight: bold;
@@ -191,6 +196,12 @@ ul {
     color: var(--light_gray_text_color);
 }
 
+.car_parts_text {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
 .spare_parts_text {
     color: var(--red_text_color);
 }
@@ -227,27 +238,51 @@ ul {
     padding-left: 20px;
 }
 
-.most_popular_car_parts {
+.most_popular_car_parts_h2_text {
     font-weight: bold;
     text-align: center;
     font-size: 35px;
+    padding-bottom: 50px;
+}
+
+.parts-carousel {
+    background-color: white;
+    min-height: 470px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.slide-control {
+    display: flex;
+}
+
+.slide-prev,
+.slide-next {
+    background-color: var(--carousel-color);
+    border: none;
+    outline: none;
+    color: var(--testimonials-slide-arrows-color);
+    border-radius: 50px;
 }
 
 .what_we_offer {
     background-image: url(/img/car_companies_list.webp);
 }
 
-.select_by_brand {
+.select_by_brand_h2_text {
     font-weight: bold;
     text-align: center;
     font-size: 35px;
     color: var(--white_text_color);
+    padding-bottom: 70px;
 }
 
 .what_we_offer_text {
     color: var(--red_text_color);
     font-weight: bold;
-    padding-left: 20px;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 25px;
 }
 
 .request {
@@ -258,18 +293,21 @@ ul {
     color: var(--white_text_color);
     font-weight: bold;
     padding-left: 20px;
+    padding-top: 90px;
+    padding-bottom: 20px;
 }
 
 .specific_part_order_text {
     color: var(--white_text_color);
     padding-left: 20px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .specific_spare_part {
     font-weight: bold;
-    text-align: center;
-    font-size: 35px;
+    font-size: 60px;
+    padding-left: 20px;
+    padding-bottom: 30px;
     color: var(--white_text_color);
 }
 
@@ -295,12 +333,31 @@ ul {
     color: var(--red_text_color);
     font-weight: bold;
     padding-left: 20px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 .our_working_process {
     font-weight: bold;
     text-align: center;
     font-size: 35px;
+    padding-bottom: 45px;
+}
+
+.tyres_work,
+.tech_work {
+    padding-left: 25px;
+    padding-bottom: 30px;
+}
+
+.how_we_work_list_part1 {
+    padding-top: 30px;
+}
+
+.how_we_work_list_part2 {
+    padding-left: 20px;
+    padding-bottom: 30px;
 }
 
 .testimonials {
@@ -311,14 +368,38 @@ ul {
     color: var(--red_text_color);
     font-weight: bold;
     padding-left: 20px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
 }
 
 .what_people_say {
     font-weight: bold;
     text-align: center;
     font-size: 35px;
+    margin-bottom: 30px;
 }
 
+.first_testiminials_ann {
+    width: 270px;
+    height: 495px;
+    padding-bottom: 20px;
+}
+
+.second_testiminials_jeff {
+    width: 270px;
+    height: 545px;
+    margin-bottom: 20px;
+}
+
+.third_testimonials_dean {
+    width: 269px;
+    height: 478px;
+    margin-bottom: 50px;
+}
+
+
+/*
 .first_customer {
     background-color: white;
     padding-left: 20px;
@@ -349,6 +430,7 @@ ul {
 .third_customer_position {
     color: var(--light_gray_text_color);
 }
+*/
 
 .footer {
     background-image: url(/img/footer_background.webp);
@@ -370,6 +452,7 @@ ul {
 .about_us_section_footer_nav {
     text-align: center;
     color: var(--nav_footer_color);
+    padding-top: 40px;
 }
 
 .about_us_section_footer_nav:link {
@@ -379,6 +462,20 @@ ul {
 .media_section_footer_nav {
     text-align: center;
     color: var(--nav_footer_color);
+    padding-top: 40px;
+}
+
+.footer_nav_about_us,
+.footer_nav_amerian_brands,
+.footer_nav_japanese_brands,
+.footer_nav_european_brands,
+.footer_nav_videos,
+.footer_nav_brands,
+.footer_nav_testimonials,
+.footer_nav_contacts {
+    text-decoration: none;
+    color: var(--nav_footer_color);
+    padding-right: 60px;
 }
 
 .facebook_logo_footer {
@@ -397,13 +494,12 @@ ul {
 }
 
 .subscribe_button {
-    width: 210px;
-    height: 65px;
-    margin-left: 20px;
+    width: 250px;
+    height: 50px;
+    margin-left: 35px;
     margin-top: 35px;
     font-size: 14px;
     background-color: var(--red_border);
-    border: 3px solid var(--white_border);
     color: var(--white_text_color);
     font-weight: bold;
     margin-bottom: 45px;
@@ -411,4 +507,49 @@ ul {
 
 .badge {
     color: aliceblue;
+}
+
+.subscribe_text,
+.follow_us_footer,
+.copyright_info {
+    color: var(--nav_footer_color);
+}
+
+.follow_us_footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.social_icons_section {
+    text-align: center;
+}
+
+.instargam_logo_footer {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.subscribe_text {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.email_input {
+    width: 250px;
+    height: 50px;
+    padding-left: 80px;
+}
+
+.email_input_form {
+    text-align: center;
+}
+
+.email_input:focus {
+    outline: none;
+}
+
+.copyright_info {
+    background-color: #030303;
+    text-align: center;
 }
