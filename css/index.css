@@ -235,7 +235,7 @@ ul {
 .car_parts_text {
     color: var(--red_text_color);
     font-weight: bold;
-    padding-left: 20px;
+    padding-left: 5px;
 }
 
 .most_popular_car_parts_h2_text {
@@ -245,24 +245,85 @@ ul {
     padding-bottom: 50px;
 }
 
-.parts-carousel {
-    background-color: white;
-    min-height: 470px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.card {
+    margin-left: 15px;
+    margin-bottom: 20px;
 }
 
-.slide-control {
-    display: flex;
+.brakes-rotor_img,
+.headlights_img {
+    width: 180px;
+    height: 155px;
+    margin-left: 50px;
 }
 
-.slide-prev,
-.slide-next {
-    background-color: var(--carousel-color);
-    border: none;
-    outline: none;
-    color: var(--testimonials-slide-arrows-color);
-    border-radius: 50px;
+.custom_wheels_img,
+.motor_parts_img {
+    width: 180px;
+    height: 190px;
+    margin-left: 45px;
+}
+
+.Brakes-Rotor_text_card {
+    font-weight: bold;
+    font-size: 28px;
+    padding-left: 45px;
+    padding-top: 30px;
+}
+
+.custom_wheels_text_card {
+    font-weight: bold;
+    font-size: 28px;
+    padding-left: 34px;
+    padding-top: 30px;
+}
+
+.motor_parts_text_card {
+    font-weight: bold;
+    font-size: 28px;
+    padding-left: 55px;
+    padding-top: 30px;
+}
+
+.headlights_text_card {
+    font-weight: bold;
+    font-size: 28px;
+    padding-left: 65px;
+    padding-top: 30px;
+}
+
+.Brakes-Rotor_text_card_article {
+    color: var(--light_gray_text_color);
+    text-align: center;
+    font-size: 18px;
+    padding-right: 68px;
+    padding-top: 30px;
+    padding-bottom: 8px;
+}
+
+.custom_wheels_text_card_article {
+    color: var(--light_gray_text_color);
+    text-align: center;
+    font-size: 18px;
+    padding-right: 66px;
+    padding-top: 30px;
+}
+
+.motor_parts_text_card_article {
+    color: var(--light_gray_text_color);
+    text-align: center;
+    font-size: 18px;
+    padding-right: 65px;
+    padding-top: 30px;
+}
+
+.headlights_text_card_article {
+    color: var(--light_gray_text_color);
+    text-align: center;
+    font-size: 18px;
+    padding-right: 60px;
+    padding-top: 30px;
+    padding-bottom: 35px;
 }
 
 .what_we_offer {
