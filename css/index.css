@@ -21,6 +21,7 @@ footer {
     /* Change some variables to more special for selectors */
     --request_a_quote_button_color: #ef3d34;
     --white_border: #ffff;
+    --nav_menu_top_color: #f8f9fa;
     --black_border_for_advantiges: #0000;
     --white_text_color: #ffff;
     --red_text_color: #ef3e34;
@@ -49,14 +50,31 @@ ul {
     margin-left: 30px;
 }
 
-.header_navigation {
-    display: flex;
-    flex-direction: row;
+.navbar-toggler {
+    width: 60px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.about_us_brg_menu_top,
+.testimonials_brg_menu_top,
+.contacts_brg_menu_top {
+    text-align: center;
+    color: #909192;
+}
+
+#dropdownMenuButton1 {
+    color: #909192;
+    background-color: var(--nav_menu_top_color);
+    text-decoration: none;
+    border: none;
+    outline: none;
 }
 
 .upper_adv {
     background-image: url(/img/upper_background_crop_for_tiny_screen.webp);
     color: white;
+    padding-bottom: 10px;
 }
 
 .upper_adv_text {
@@ -74,7 +92,7 @@ ul {
 .request_a_quote {
     width: 210px;
     height: 65px;
-    margin-left: 20px;
+    margin-left: 32px;
     margin-top: 35px;
     font-size: 14px;
     background-color: var(--request_a_quote_button_color);
@@ -346,6 +364,50 @@ ul {
     padding-bottom: 25px;
 }
 
+.usa_flag,
+.japanese_flag,
+.eu_flag {
+    width: 100px;
+    height: 50px;
+}
+
+.card_brands {
+    background-color: #2d2d2d;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.american_brands_cars,
+.japanese_brands_cars,
+.eu_brands_cars {
+    color: white;
+}
+
+.jeep_brand,
+.chevrolet_brand,
+.chrysler_brand,
+.honda_brand,
+.nissan_brand,
+.toyota_brand,
+.mercedes_brand,
+.audi_brand,
+.volkswagen_brand,
+.volvo_brand {
+    width: 255px;
+    height: 150px;
+}
+
+.american_brands_article,
+.japanese_brands_article,
+.eu_brands_article {
+    color: white;
+    font-size: 18px;
+}
+
+.divider {
+    width: 255px;
+}
+
 .request {
     background-color: var(--request_section_color);
 }
@@ -445,18 +507,21 @@ ul {
     width: 270px;
     height: 495px;
     padding-bottom: 20px;
+    margin-left: 25px;
 }
 
 .second_testiminials_jeff {
     width: 270px;
     height: 545px;
     margin-bottom: 20px;
+    margin-left: 25px;
 }
 
 .third_testimonials_dean {
     width: 269px;
     height: 478px;
     margin-bottom: 50px;
+    margin-left: 25px;
 }
 
 
@@ -494,7 +559,7 @@ ul {
 */
 
 .footer {
-    background-image: url(/img/footer_background.webp);
+    background-image: url(/img/engine_background.webp);
 }
 
 .footer_logo {
@@ -564,6 +629,8 @@ ul {
     color: var(--white_text_color);
     font-weight: bold;
     margin-bottom: 45px;
+    border: none;
+    outline: none;
 }
 
 .badge {
@@ -613,4 +680,114 @@ ul {
 .copyright_info {
     background-color: #030303;
     text-align: center;
+}
+
+@media only screen and (min-width: 420px) {
+    * {
+        width: 420px;
+    }
+    .browse_the_parts_button {
+        margin-left: 120px;
+        margin-top: 35px;
+    }
+    .browse_the_parts_button_text {
+        padding-right: 215px;
+        padding-top: 15px;
+    }
+    .card {
+        margin-left: 72px;
+        margin-bottom: 20px;
+    }
+    .Brakes-Rotor_text_card_article,
+    .custom_wheels_text_card_article,
+    .motor_parts_text_card_article,
+    .headlights_text_card_article {
+        padding-right: 165px;
+    }
+    .card_brands {
+        margin-left: 65px;
+        margin-bottom: 20px;
+    }
+    .request_parts_button {
+        margin-left: 100px;
+    }
+    .request_parts_button_text {
+        padding-right: 215px;
+    }
+    .first_testiminials_ann,
+    .second_testiminials_jeff,
+    .third_testimonials_dean {
+        margin-left: 90px;
+    }
+    .footer_logo {
+        margin-left: 140px;
+    }
+    .subscribe_button {
+        margin-left: 85px;
+    }
+}
+
+@media only screen and (min-width: 540px) {
+    * {
+        width: 540px;
+    }
+    .upper_adv_text {
+        text-align: center;
+        padding-right: 20px;
+    }
+    .upper_banner_text {
+        text-align: center;
+        padding-right: 20px;
+    }
+    .request_a_quote {
+        margin-left: 170px;
+    }
+    .upper_contact_info_block {
+        margin-left: 150px;
+    }
+    .browse_the_parts_button {
+        margin-left: 170px;
+    }
+    .browse_the_parts_button_text {
+        padding-right: 340px;
+    }
+    .card {
+        margin-left: 130px;
+    }
+    .Brakes-Rotor_text_card_article,
+    .custom_wheels_text_card_article,
+    .motor_parts_text_card_article,
+    .headlights_text_card_article {
+        padding-right: 285px;
+    }
+    .card_brands {
+        margin-left: 125px;
+    }
+    .request_parts_button {
+        margin-left: 160px;
+    }
+    .request_parts_button_text {
+        padding-right: 325px;
+    }
+    .how_we_work_list_part1 {
+        width: 350px;
+        height: 600px;
+        margin-left: 140px;
+    }
+    .how_we_work_list_part2 {
+        width: 350px;
+        height: 600px;
+        margin-left: 140px;
+    }
+    .first_testiminials_ann,
+    .second_testiminials_jeff,
+    .third_testimonials_dean {
+        margin-left: 140px;
+    }
+    .footer_logo {
+        margin-left: 195px;
+    }
+    .subscribe_button {
+        margin-left: 145px;
+    }
 }

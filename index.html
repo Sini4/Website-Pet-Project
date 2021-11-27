@@ -18,8 +18,37 @@
     <header>
 
         <div class="header_navigation">
-            <img src="img/car-spare-parts-black_logo.svg" alt="car spare parts logo black" class="car-spare-parts-black_logo">
-            <!-- <nav class="site_menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <img src="img/car-spare-parts-black_logo.svg" alt="car spare parts logo black" class="car-spare-parts-black_logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="about_us_brg_menu_top">
+                            <a class="nav-link " href="#about_us">About us</a>
+                        </li>
+                        <li class="auto_parts_brg_menu_top">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Auto parts
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">American brands</a></li>
+                                    <li><a class="dropdown-item" href="#">Japanese brands</a></li>
+                                    <li><a class="dropdown-item" href="#">European brands</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="testimonials_brg_menu_top">
+                            <a class="nav-link " href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="contacts_brg_menu_top">
+                            <a class="nav-link " href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <!-- <nav class="site_menu">
                 <ul>
                     <li><a href="#" class="header_nav_about_us">About us</a></li>
                     <li><a href="#" class="header_nav_auto-parts">Auto parts</a></li>
@@ -41,7 +70,8 @@
     <main>
         <div class="upper_adv">
             <h2 class="upper_adv_text">Cheap Car Spare<br>Parts</h2>
-            <p class="upper_banner_text">We can find any spare part<br>for your car.<br>Just send us a message.</p>
+            <p class="upper_banner_text">We can find any spare part<br>for your car.<br>Just send us a message.
+            </p>
             <button class="request_a_quote">REQUEST A QUOTE</button>
             <div class="upper_contact_info_block">
                 <p class="call_us_upper_info"><span class="call_us_upper_info_call_us_text">Call Us
@@ -58,7 +88,8 @@
             <h2 class="professional_car_parts_seller_text">Professional Car Parts Seller Since 1999</h2>
             <p class="who_we_are_text_about">We are SpareParts, one of the best companies in the USA offering the widest selection of spare parts for your car. From the very start of our business in 1999, our goal was to help you find the right parts for your vehicle at affordable prices.
                 <br><br>Thanks to our service, you can buy a spare part for any car. We sell spare parts for cars from American,
-                <br> Japanese, and European<br>manufacturers, regardless of body type and year of manufacture.<br>Even if your model has long been discontinued, we will find spare parts for it at low prices. Your car will always be running!
+                <br> Japanese, and European<br>manufacturers, regardless of body type and year of manufacture.
+                <br>Even if your model has long been discontinued, we will find spare parts for it at low prices. Your car will always be running!
             </p>
             <button class="browse_the_parts_button">
                 <p class="browse_the_parts_button_text">BROWSE THE PARTS</p>
@@ -178,14 +209,75 @@
             <!-- red color -->
             <h2 class="select_by_brand_h2_text">Select By Brand</h2>
 
-            <!-- JS LIST SOON-->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card_brands" style="width: 18rem;">
+                            <div class="card-body">
+                                <img src="/img/flags/usa_flag.svg" class="usa_flag" alt="usa flag">
+                                <h3 class="american_brands_cars">American</h3>
+                                <img src="/img/divider.png" class="divider" alt="divider">
+                                <p class="american_brands_article">We offer a lot of parts for<br>American cars. Suspension parts<br>for Jeep, engine repair kits for<br>Chevrolet and a lot of any other
+                                    <br>spare parts for cars from USA<br>manufacturers you need.
+                                </p>
+                                <img src="/img/divider.png" class="divider" alt="divider">
+                                <img src="/img/brands/American/jeep.svg" class="jeep_brand" alt="jeep brand logo">
+                                <img src="/img/brands/American/chevrolet.svg" class="chevrolet_brand" alt="chevrolet brand logo">
+                                <img src="/img/brands/American/chrysler.svg" class="chrysler_brand" alt="chrysler brand logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card_brands" style="width: 18rem;">
+                            <div class="card-body">
+                                <img src="/img/flags/japanese_flag.svg" class="japanese_flag" alt="japanese flag">
+                                <h3 class="japanese_brands_cars">Japanese</h3>
+                                <img src="/img/divider.png" class="divider" alt="divider">
+                                <p class="japanese_brands_article">Any spare parts for japanese<br>cars you can offer in our store.<br>Order now any parts for Honda,<br>Nissan and Toyota you need<br>right now.
+                                </p>
+                                <img src="/img/divider.png" class="divider" alt="divider">
+                                <img src="/img/brands/Japanese/honda.svg" class="honda_brand" alt="honda brand logo">
+                                <img src="/img/brands/Japanese/nissan.svg" class="nissan_brand" alt="nissan brand logo">
+                                <img src="/img/brands/Japanese/toyota.svg" class="toyota_brand" alt="toyota brand logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card_brands" style="width: 18rem;">
+                            <div class="card-body">
+                                <img src="/img/flags/eu_union_flag.svg" class="eu_flag" alt="eu flag">
+                                <h3 class="eu_brands_cars">European</h3>
+                                <img src="/img/divider.png" class="divider" alt="divider">
+                                <p class="eu_brands_article">Need to find new parts for your<br>Mercedes quickly? Want to find
+                                    <br>engine parts for Audi, Volkswagen<br>or Volvo? Spare Parts will be
+                                    <br>happy to help you.
+                                </p>
+                                <img src="/img/divider.png" class="divider" alt="divider">
+                                <img src="/img/brands/European/mercedes-benz.svg" class="mercedes_brand" alt="mercedes brand logo">
+                                <img src="/img/brands/European/audi.svg" class="audi_brand" alt="audi brand logo">
+                                <img src="/img/brands/European/volkswagen.svg" class="volkswagen_brand" alt="volkswagen brand logo">
+                                <img src="/img/brands/European/volvo.svg" class="volvo_brand" alt="volvo brand logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
 
         <div class="request">
             <p class="request_text">/ REQUEST</p>
             <!-- white color -->
             <h2 class="specific_spare_part">Need a Specific <br>Spare Part?</h2>
-            <p class="specific_part_order_text">Press the button , fill out the form, and we'll find it for you!</p>
+            <p class="specific_part_order_text">Press the button , fill out the form, and we'll find it for you!
+            </p>
             <button class="request_parts_button">
                 <p class="request_parts_button_text">SEND A REQUEST</p>
             </button>
@@ -212,37 +304,6 @@
                 <img src="img/testimonials_ann.webp" alt="testimonials from customer Ann" class="first_testiminials_ann">
                 <img src="img/testimonials_jeff.webp" alt="testimonials from customer Jeff" class="second_testiminials_jeff">
                 <img src="img/testimonials_dean.webp" alt="testimonials from customer Dean" class="third_testimonials_dean">
-                <!--
-                <div class="first_customer">
-                    <h3 class="first_customer_name">Ann Golden,</h3>
-                    <p class="first_customer_position">/ CLIENT OF COMPANY</p>
-                    <img src="img/customers/first_customer.png" alt="yound woman drives" class="first_customer_img">
-                    <p class="first_customer_text">With SpareParts, it is no longer a<br>problem to find any auto parts. I have<br>been ordering parts here for a year now,<br>and I am completely satisfied with the
-                        <br>service. All parts are always in stock,<br>managers help to solve any problem.
-                    </p>
-                </div>
-                -->
-
-                <!--
-                <div class="second_customer">
-                    <h3 class="second_customer_name">Jeff Madisson,</h3>
-                    <p class="second_customer_position">/ CLIENT OF COMPANY</p>
-                    <img src="img/customers/second_customer.png" alt="man drives audi">
-                    <p class="second_customer_text">My car was produced almost 40 years<br>ago. And every year, it is more and more<br>difficult to find spare parts for it. At<br>SpareParts, I was able to immediately
-                        <br>find a repair kit for the engine for a really<br>low price. Thank you very much!
-                    </p>
-                </div>
-                -->
-
-                <!--
-                <div class="third_customer">
-                    <h3 class="third_customer_name">Dean Seanic,</h3>
-                    <p class="third_customer_position">/ CLIENT OF COMPANY</p>
-                    <img src="img/customers/third_customer.png" alt="man drives SUV">
-                    <p class="third_customer_text">I inherited my father's Chevrolet Impala.<br>Everyone knows what a great car this is.<br>However, I faced a very high cost of<br>spare parts for this model. Fortunately, I<br>saw an ad - SpareParts offered very<br>competitive prices
-                        for bearings.</p>
-                </div>
-                -->
             </div>
         </div>
 
