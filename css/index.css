@@ -81,6 +81,7 @@ ul {
     font-size: 60px;
     padding-top: 110px;
     padding-left: 25px;
+    font-weight: bold;
 }
 
 .upper_banner_text {
@@ -789,5 +790,276 @@ ul {
     }
     .subscribe_button {
         margin-left: 145px;
+    }
+}
+
+@media only screen and (min-width: 715px) {
+    * {
+        width: 715px;
+    }
+    .upper_adv {
+        background-image: url(/img/upper_background.webp);
+    }
+    .request_a_quote {
+        margin-left: 255px;
+    }
+    .upper_contact_info_block {
+        margin-left: 232px;
+    }
+    .browse_the_parts_button {
+        margin-left: 250px;
+    }
+    .browse_the_parts_button_text {
+        padding-right: 510px;
+    }
+    .card {
+        margin-left: 230px;
+    }
+    .Brakes-Rotor_text_card_article,
+    .custom_wheels_text_card_article,
+    .motor_parts_text_card_article,
+    .headlights_text_card_article {
+        padding-right: 450px;
+    }
+    .card_brands {
+        margin-left: 212px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    .card-body_brands {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+    .specific_spare_part {
+        text-align: center;
+    }
+    .specific_part_order_text {
+        text-align: center;
+    }
+    .request_parts_button {
+        margin-left: 260px;
+    }
+    .request_parts_button_text {
+        padding-right: 505px;
+    }
+    .tyres_work,
+    .tech_work {
+        height: 630px;
+        width: 560px;
+        margin-left: 70px;
+    }
+    .first_testiminials_ann,
+    .second_testiminials_jeff,
+    .third_testimonials_dean {
+        margin-left: 200px;
+    }
+    .first_testiminials_ann {
+        width: 300px;
+        height: 535px;
+    }
+    .second_testiminials_jeff {
+        width: 300px;
+        height: 585px;
+    }
+    .third_testimonials_dean {
+        width: 299px;
+        height: 550px;
+    }
+    .footer_logo {
+        margin-left: 280px;
+    }
+    .subscribe_button {
+        margin-left: 233px;
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    * {
+        width: 980px;
+    }
+    .upper_adv_text {
+        padding-right: 500px;
+        text-align: left;
+        font-size: 85px;
+    }
+    .upper_banner_text {
+        text-align: left;
+    }
+    .request_a_quote {
+        margin-left: 30px;
+    }
+    .upper_contact_info_block {
+        margin-left: 680px;
+    }
+    .happy_clients_img {
+        width: 630px;
+        height: 720px;
+        margin-left: 130px;
+        margin-top: 80px;
+        margin-bottom: 120px;
+    }
+    .professional_car_parts_seller_text {
+        margin-bottom: 60px;
+    }
+    .who_we_are_text_about {
+        margin-bottom: 60px;
+    }
+    .browse_the_parts_button {
+        margin-left: 350px;
+    }
+    .browse_the_parts_button_text {
+        margin-left: -132px;
+    }
+    .advantage_list_and_car_picture {
+        display: flex;
+    }
+    .why_choose_us_cars_image {
+        width: 480px;
+        height: 527px;
+        margin-left: -500px;
+        margin-top: 80px;
+    }
+    .most_popular_car_parts_h2_text {
+        padding-left: 40px;
+    }
+    .card {
+        margin-left: 210px;
+        height: 600px;
+        width: 600px;
+    }
+    .brakes-rotor_img,
+    .headlights_img {
+        width: 240px;
+        height: 210px;
+        margin-left: 160px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .custom_wheels_img,
+    .motor_parts_img {
+        width: 240px;
+        height: 245px;
+        margin-left: 170px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .Brakes-Rotor_text_card,
+    .custom_wheels_text_card,
+    .motor_parts_text_card,
+    .headlights_text_card {
+        margin-left: 120px;
+        font-size: 40px;
+    }
+    .Brakes-Rotor_text_card_article,
+    .custom_wheels_text_card_article,
+    .motor_parts_text_card_article,
+    .headlights_text_card_article {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .card_brands {
+        width: 600px;
+        margin-left: 210px;
+    }
+    .usa_flag,
+    .japanese_flag,
+    .eu_flag {
+        width: 100px;
+        height: 50px;
+        margin-left: 20px;
+    }
+    .american_brands_cars,
+    .japanese_brands_cars,
+    .eu_brands_cars {
+        color: white;
+        margin-left: 20px;
+    }
+    .jeep_brand,
+    .chevrolet_brand,
+    .chrysler_brand,
+    .honda_brand,
+    .nissan_brand,
+    .toyota_brand,
+    .mercedes_brand,
+    .audi_brand,
+    .volkswagen_brand,
+    .volvo_brand {
+        width: 455px;
+        height: 310px;
+        margin-left: 60px;
+    }
+    .american_brands_article,
+    .japanese_brands_article,
+    .eu_brands_article {
+        font-size: 20px;
+        margin-left: 130px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .divider {
+        width: 565px;
+        margin-bottom: 20px;
+    }
+    .specific_spare_part {
+        font-size: 80px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .request_parts_button {
+        margin-left: 390px;
+        margin-top: 90px;
+    }
+    .request_parts_button_text {
+        margin-left: -130px;
+    }
+    .tyres_work,
+    .tech_work {
+        height: 430px;
+        width: 395px;
+        margin-left: 70px;
+    }
+    .how_we_work_list_part1 {
+        width: 270px;
+        height: 500px;
+    }
+    .how_we_work_list_part2 {
+        width: 300px;
+        height: 500px;
+        margin-top: 60px;
+    }
+    .testimonials_list {
+        display: flex;
+    }
+    .first_testiminials_ann {
+        width: 300px;
+        height: 535px;
+        margin-left: 20px;
+    }
+    .second_testiminials_jeff {
+        width: 300px;
+        height: 585px;
+        margin-left: 20px;
+    }
+    .third_testimonials_dean {
+        width: 299px;
+        height: 550px;
+        margin-left: 20px;
+    }
+    .footer_logo {
+        margin-left: 410px;
+    }
+    .subscribe_button {
+        margin-left: 363px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    * {
+        width: 992px;
+    }
+    .upper_adv {
+        background-image: url(/img/upper_background.webp);
+        width: 1920px;
     }
 }
