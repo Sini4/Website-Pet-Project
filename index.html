@@ -1,388 +1,649 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car Spare Parts</title>
-    <link rel="icon" href="img/favicon.png">
-    <link rel="stylesheet" href="css/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-
-        <div class="header_navigation">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <img src="img/car-spare-parts-black_logo.svg" alt="car spare parts logo black" class="car-spare-parts-black_logo">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="about_us_brg_menu_top">
-                            <a class="nav-link " href="#about_us">About us</a>
-                        </li>
-                        <li class="auto_parts_brg_menu_top">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Auto parts
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">American brands</a></li>
-                                    <li><a class="dropdown-item" href="#">Japanese brands</a></li>
-                                    <li><a class="dropdown-item" href="#">European brands</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="testimonials_brg_menu_top">
-                            <a class="nav-link " href="#testimonials">Testimonials</a>
-                        </li>
-                        <li class="contacts_brg_menu_top">
-                            <a class="nav-link " href="#contacts">Contacts</a>
-                        </li>
-                    </ul>
-                    <div>
-                        <!-- <nav class="site_menu">
-                <ul>
-                    <li><a href="#" class="header_nav_about_us">About us</a></li>
-                    <li><a href="#" class="header_nav_auto-parts">Auto parts</a></li>
-                    <li><a href="#" class="header_nav_testimonials">Testimonials</a></li>
-                    <li><a href="#" class="header_nav_contacts">Contacts</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="header_social_icons">
-            <a href="facebook.com"> <img src="img/logo/facebook.svg" alt="facebook logo" height="150px" width="150px">
-            </a>
-            <a href="instargam.com"> <img src="img/logo/instagram.svg" alt="instagram logo" height="150px" width="150px"> </a>
-            <a href="youtube.com"> <img src="img/logo/youtube.svg" alt="youtube logo" height="150px" width="150px"> </a>
-        </div>
-    -->
+      <div class="header_navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <img
+            src="img/car-spare-parts-black_logo.svg"
+            alt="car spare parts logo black"
+            class="car-spare-parts-black_logo"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto" id="navBarButtons">
+              <li class="about_us_brg_menu_top">
+                <a class="nav-link" href="#about_us">About us</a>
+              </li>
+              <li class="auto_parts_brg_menu_top">
+                <div class="dropdown" id="dropdown_nav_header">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Auto parts
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#">American brands</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Japanese brands</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">European brands</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="testimonials_brg_menu_top">
+                <a class="nav-link" href="#testimonials">Testimonials</a>
+              </li>
+              <li class="contacts_brg_menu_top">
+                <a class="nav-link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <div class="upper_adv">
-            <h2 class="upper_adv_text">Cheap Car Spare<br>Parts</h2>
-            <p class="upper_banner_text">We can find any spare part<br>for your car.<br>Just send us a message.
+      <div class="upper_adv">
+        <h2 class="upper_adv_text">Cheap Car Spare<br />Parts</h2>
+        <p class="upper_banner_text">
+          We can find any spare part<br />for your car.<br />Just send us a
+          message.
+        </p>
+        <button class="request_a_quote">REQUEST A QUOTE</button>
+        <div class="upper_contact_info_block">
+          <p class="call_us_upper_info">
+            <span class="call_us_upper_info_call_us_text">Call Us 24</span
+            ><br />+1-234-567-89-00
+          </p>
+          <p class="adress_upper_info">
+            <span class="call_us_upper_info_we_are_here_text">We Are Here</span
+            ><br />2572 McAllister St,<br />San Franciso
+          </p>
+        </div>
+      </div>
+
+      <div class="who_we_are">
+        <img
+          src="img/happy_clients.webp"
+          alt="happy clients"
+          class="happy_clients_img"
+        />
+        <div class="text_and_button_section_who_we_are">
+          <p class="who_we_are_text">/ WHO WE ARE</p>
+          <!-- red color -->
+          <h2 class="professional_car_parts_seller_text_who_we_are">
+            Professional Car Parts Seller Since 1999
+          </h2>
+          <p class="who_we_are_text_about">
+            We are SpareParts, one of the best companies in the USA offering the
+            widest selection of spare parts for your car.<br />From the very
+            start of our business in 1999, our goal was to help you find the
+            right parts<br />for your vehicle at affordable prices.
+            <br /><br />Thanks to our service, you can buy a spare part for any
+            car. We sell spare parts for cars from American, <br />
+            Japanese, and European<br />manufacturers, regardless of body type
+            and year of manufacture. <br />Even if your model has long been
+            discontinued, we will find spare parts for it at low prices.<br />Your
+            car will always be running!
+          </p>
+          <button class="browse_the_parts_button">
+            <p class="browse_the_parts_button_text">BROWSE THE PARTS</p>
+          </button>
+        </div>
+      </div>
+
+      <div class="why_choose_us">
+        <p class="why_choose_us_text">/ WHY CHOOSE US</p>
+        <!-- red color -->
+        <h2 class="professional_car_parts_seller_text_why_choose_us">
+          Professional Car Parts Seller Since 1999
+        </h2>
+        <div class="advantage_list_and_car_picture">
+          <div class="advantage_list">
+            <p class="we_are_best_text">
+              We are
+              <span class="spare_parts_text"
+                >SpareParts
+                <!-- red color --> </span
+              >, one of the best companies in the USA<br />offering a great
+              choice of spare parts for your car.
             </p>
-            <button class="request_a_quote">REQUEST A QUOTE</button>
-            <div class="upper_contact_info_block">
-                <p class="call_us_upper_info"><span class="call_us_upper_info_call_us_text">Call Us
-                        24</span><br>+1-234-567-89-00</p>
-                <p class="adress_upper_info"><span class="call_us_upper_info_we_are_here_text">We Are
-                        Here</span><br>2572 McAllister St,<br>San Franciso</p>
-            </div>
-        </div>
-
-        <div class="who_we_are">
-            <img src="img/happy_clients.webp" alt="happy clients" class="happy_clients_img">
-            <p class="who_we_are_text">/ WHO WE ARE </p>
-            <!-- red color -->
-            <h2 class="professional_car_parts_seller_text">Professional Car Parts Seller Since 1999</h2>
-            <p class="who_we_are_text_about">We are SpareParts, one of the best companies in the USA offering the widest selection of spare parts for your car. From the very start of our business in 1999, our goal was to help you find the right parts for your vehicle at affordable prices.
-                <br><br>Thanks to our service, you can buy a spare part for any car. We sell spare parts for cars from American,
-                <br> Japanese, and European<br>manufacturers, regardless of body type and year of manufacture.
-                <br>Even if your model has long been discontinued, we will find spare parts for it at low prices. Your car will always be running!
-            </p>
-            <button class="browse_the_parts_button">
-                <p class="browse_the_parts_button_text">BROWSE THE PARTS</p>
-            </button>
-        </div>
-
-        <div class="why_choose_us">
-            <p class="why_choose_us_text">/ WHY CHOOSE US</p>
-            <!-- red color -->
-            <h2 class="professional_car_parts_seller_text">Professional Car Parts Seller Since 1999</h2>
-            <div class="advantage_list_and_car_picture">
-                <div class="advantage_list">
-                    <p class="we_are_best_text">We are <span class="spare_parts_text">SpareParts
-                            <!-- red color -->
-                        </span>, one of the best companies in the USA<br>offering a great choice of spare parts for your car.
-                    </p>
-                    <div class="grid_list_advantages">
-                        <div class="vast_experience">
-                            <img src="img/why_choose_us/big_car.webp" alt="car_mini" class="car_mini_img_advantages">
-                            <div class="vast_experience_article">
-                                <h3 class="vast_experience_h3_text">Vast Experience</h3>
-                                <p class="vast_experience_text">We have been working for over<br>20 years already and know
-                                    <br>everything about cars.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="rare_parts">
-                            <img src="img/why_choose_us/accumulator.webp" alt="accumulator_mini" class="accumulator_mini_img_advantages">
-                            <div class="rare_parts_article">
-                                <h3 class="rare_parts_h3_text">Rare Parts</h3>
-                                <p class="rare_parts_text">We can find any spare part,<br>even for very rare cars long out
-                                    <br>of production.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="individual_approach">
-                            <img src="img/why_choose_us/wrench.webp" alt="wrench_mini" class="wrench_mini_img_advantages">
-                            <div class="individual_approach_article">
-                                <h3 class="individual_approach_h3_text">Individual Approach</h3>
-                                <p class="individual_approach_text">If you have not found the<br>auto part you need, you can
-                                    <br>send us an individual request.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
+            <div class="grid_list_advantages">
+              <div class="vast_experience">
+                <img
+                  src="img/why_choose_us/big_car.webp"
+                  alt="car_mini"
+                  class="car_mini_img_advantages"
+                />
+                <div class="vast_experience_article">
+                  <h3 class="vast_experience_h3_text">Vast Experience</h3>
+                  <p class="vast_experience_text">
+                    We have been working for over<br />20 years already and know
+                    <br />everything about cars.
+                  </p>
                 </div>
-                <img src="img/why_choose_us.webp" alt="why choose us" class="why_choose_us_cars_image">
-            </div>
-        </div>
+              </div>
 
-        <div class="car_parts">
-            <p class="car_parts_text">/ CAR PARTS</p>
-            <!-- red color -->
-            <h2 class="most_popular_car_parts_h2_text">Most Popular Carparts</h2>
-
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="/img/parts/brakes&rotor.png" class="brakes-rotor_img" alt="Brakes&Rotor">
-                                <h3 class="Brakes-Rotor_text_card">Brakes&Rotor</h3>
-                                <p class="Brakes-Rotor_text_card_article">Remember to check and<br>purchase new high-
-                                    <br>quality brake discs when<br>needed.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="/img/parts/custom_wheels.png" class="custom_wheels_img" alt="Custom Wheels">
-                                <h3 class="custom_wheels_text_card">Custom Wheels</h3>
-                                <p class="custom_wheels_text_card_article">Select the best car<br>wheels of any styles and
-                                    <br>colors on our website
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="/img/parts/motor_parts.png" class="motor_parts_img" alt="Motor Parts">
-                                <h3 class="motor_parts_text_card">Motor Parts</h3>
-                                <p class="motor_parts_text_card_article">Everything you may<br>need to repair the engine
-                                    <br>of your vehicle.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="/img/parts/headlights.png" class="headlights_img" alt="Headlights">
-                                <h3 class="headlights_text_card">Headlights</h3>
-                                <p class="headlights_text_card_article">Find headlights for any<br>car model at our website
-                                    <br>at the lowest prices.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+              <div class="rare_parts">
+                <img
+                  src="img/why_choose_us/accumulator.webp"
+                  alt="accumulator_mini"
+                  class="accumulator_mini_img_advantages"
+                />
+                <div class="rare_parts_article">
+                  <h3 class="rare_parts_h3_text">Rare Parts</h3>
+                  <p class="rare_parts_text">
+                    We can find any spare part,<br />even for very rare cars
+                    long out <br />of production.
+                  </p>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
+              </div>
 
-        <div class="what_we_offer">
-            <p class="what_we_offer_text">/ WHAT WE OFFER</p>
-            <!-- red color -->
-            <h2 class="select_by_brand_h2_text">Select By Brand</h2>
-
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card_brands">
-                            <div class="card-body_brands">
-                                <img src="/img/flags/usa_flag.svg" class="usa_flag" alt="usa flag">
-                                <h3 class="american_brands_cars">American</h3>
-                                <img src="/img/divider.png" class="divider" alt="divider">
-                                <p class="american_brands_article">We offer a lot of parts for<br>American cars. Suspension parts<br>for Jeep, engine repair kits for<br>Chevrolet and a lot of any other
-                                    <br>spare parts for cars from USA<br>manufacturers you need.
-                                </p>
-                                <img src="/img/divider.png" class="divider" alt="divider">
-                                <img src="/img/brands/American/jeep.svg" class="jeep_brand" alt="jeep brand logo">
-                                <img src="/img/brands/American/chevrolet.svg" class="chevrolet_brand" alt="chevrolet brand logo">
-                                <img src="/img/brands/American/chrysler.svg" class="chrysler_brand" alt="chrysler brand logo">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card_brands">
-                            <div class="card-body_brands">
-                                <img src="/img/flags/japanese_flag.svg" class="japanese_flag" alt="japanese flag">
-                                <h3 class="japanese_brands_cars">Japanese</h3>
-                                <img src="/img/divider.png" class="divider" alt="divider">
-                                <p class="japanese_brands_article">Any spare parts for japanese<br>cars you can offer in our store.<br>Order now any parts for Honda,<br>Nissan and Toyota you need<br>right now.
-                                </p>
-                                <img src="/img/divider.png" class="divider" alt="divider">
-                                <img src="/img/brands/Japanese/honda.svg" class="honda_brand" alt="honda brand logo">
-                                <img src="/img/brands/Japanese/nissan.svg" class="nissan_brand" alt="nissan brand logo">
-                                <img src="/img/brands/Japanese/toyota.svg" class="toyota_brand" alt="toyota brand logo">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card_brands">
-                            <div class="card-body_brands">
-                                <img src="/img/flags/eu_union_flag.svg" class="eu_flag" alt="eu flag">
-                                <h3 class="eu_brands_cars">European</h3>
-                                <img src="/img/divider.png" class="divider" alt="divider">
-                                <p class="eu_brands_article">Need to find new parts for your<br>Mercedes quickly? Want to find
-                                    <br>engine parts for Audi, Volkswagen<br>or Volvo? Spare Parts will be
-                                    <br>happy to help you.
-                                </p>
-                                <img src="/img/divider.png" class="divider" alt="divider">
-                                <img src="/img/brands/European/mercedes-benz.svg" class="mercedes_brand" alt="mercedes brand logo">
-                                <img src="/img/brands/European/audi.svg" class="audi_brand" alt="audi brand logo">
-                                <img src="/img/brands/European/volkswagen.svg" class="volkswagen_brand" alt="volkswagen brand logo">
-                                <img src="/img/brands/European/volvo.svg" class="volvo_brand" alt="volvo brand logo">
-                            </div>
-                        </div>
-                    </div>
+              <div class="individual_approach">
+                <img
+                  src="img/why_choose_us/wrench.webp"
+                  alt="wrench_mini"
+                  class="wrench_mini_img_advantages"
+                />
+                <div class="individual_approach_article">
+                  <h3 class="individual_approach_h3_text">
+                    Individual Approach
+                  </h3>
+                  <p class="individual_approach_text">
+                    If you have not found the<br />auto part you need, you can
+                    <br />send us an individual request.
+                  </p>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+              </div>
             </div>
+          </div>
+          <img
+            src="img/why_choose_us.webp"
+            alt="why choose us"
+            class="why_choose_us_cars_image"
+          />
         </div>
+      </div>
 
-        <div class="request">
-            <p class="request_text">/ REQUEST</p>
-            <!-- white color -->
-            <h2 class="specific_spare_part">Need a Specific <br>Spare Part?</h2>
-            <p class="specific_part_order_text">Press the button , fill out the form, and we'll find it for you!
-            </p>
-            <button class="request_parts_button">
-                <p class="request_parts_button_text">SEND A REQUEST</p>
-            </button>
+      <div class="car_parts">
+        <p class="car_parts_text">/ CAR PARTS</p>
+        <!-- red color -->
+        <h2 class="most_popular_car_parts_h2_text">Most Popular Carparts</h2>
 
-            <!-- OTHER PART MAYBE WILL BE A PIC -->
-        </div>
-
-        <div class="how_we_work">
-            <p class="how_we_work_text">/ HOW WE WORK</p>
-            <!-- red color -->
-            <h2 class="our_working_process">Our Working Process</h2>
-            <img src="img/working_process_tyres_short.webp" alt="tyres work" class="tyres_work">
-            <img src="img/working_process_tech_short.webp" alt="tech work" class="tech_work">
-            <img src="img/how_we_work_list_part1.webp" alt="how we work part 1" class="how_we_work_list_part1">
-            <img src="img/how_we_work_list_part2.webp" alt="how we work part 2" class="how_we_work_list_part2">
-            <!-- OTHER PART MAYBE WILL BE A PIC OR WITH JS-->
-        </div>
-
-        <div class="testimonials">
-            <p class="testimonials_text">/ TESTIMONIALS</p>
-            <!-- red color -->
-            <h2 class="what_people_say">What People Say</h2>
-            <div class="testimonials_list">
-                <img src="img/testimonials_ann.webp" alt="testimonials from customer Ann" class="first_testiminials_ann">
-                <img src="img/testimonials_jeff.webp" alt="testimonials from customer Jeff" class="second_testiminials_jeff">
-                <img src="img/testimonials_dean.webp" alt="testimonials from customer Dean" class="third_testimonials_dean">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner" id="parts_carousel_inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="/img/parts/brakes&rotor.png"
+                    class="brakes-rotor_img"
+                    alt="Brakes&Rotor"
+                  />
+                  <h3 class="Brakes-Rotor_text_card">Brakes&Rotor</h3>
+                  <p class="Brakes-Rotor_text_card_article">
+                    Remember to check and<br />purchase new high- <br />quality
+                    brake discs when<br />needed.
+                  </p>
+                </div>
+              </div>
             </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="/img/parts/custom_wheels.png"
+                    class="custom_wheels_img"
+                    alt="Custom Wheels"
+                  />
+                  <h3 class="custom_wheels_text_card">Custom Wheels</h3>
+                  <p class="custom_wheels_text_card_article">
+                    Select the best car<br />wheels of any styles and
+                    <br />colors on our website
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="/img/parts/motor_parts.png"
+                    class="motor_parts_img"
+                    alt="Motor Parts"
+                  />
+                  <h3 class="motor_parts_text_card">Motor Parts</h3>
+                  <p class="motor_parts_text_card_article">
+                    Everything you may<br />need to repair the engine <br />of
+                    your vehicle.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="card-body">
+                  <img
+                    src="/img/parts/headlights.png"
+                    class="headlights_img"
+                    alt="Headlights"
+                  />
+                  <h3 class="headlights_text_card">Headlights</h3>
+                  <p class="headlights_text_card_article">
+                    Find headlights for any<br />car model at our website
+                    <br />at the lowest prices.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+            id="carousel_control_prev_id"
+          >
+            <span
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+              id="carousel_control_prev_id_icon"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+            id="carousel_control_next_id"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+              id="carousel_control_next_id_icon"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+      </div>
 
-        <div class="carousel_under_testimonials">
-            <!-- JS CAROUSEL SOON -->
+      <div class="what_we_offer">
+        <p class="what_we_offer_text">/ WHAT WE OFFER</p>
+        <!-- red color -->
+        <h2 class="select_by_brand_h2_text">Select By Brand</h2>
+
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner" id="brands_carousel_inner">
+            <div class="carousel-item active">
+              <div class="card_brands">
+                <div class="card-body_brands">
+                  <img
+                    src="/img/flags/usa_flag.svg"
+                    class="usa_flag"
+                    alt="usa flag"
+                  />
+                  <h3 class="american_brands_cars">American</h3>
+                  <img src="/img/divider.png" class="divider" alt="divider" />
+                  <p class="american_brands_article">
+                    We offer a lot of parts for<br />American cars. Suspension
+                    parts<br />for Jeep, engine repair kits for<br />Chevrolet
+                    and a lot of any other <br />spare parts for cars from
+                    USA<br />manufacturers you need.
+                  </p>
+                  <img src="/img/divider.png" class="divider" alt="divider" />
+                  <img
+                    src="/img/brands/American/jeep.svg"
+                    class="jeep_brand"
+                    alt="jeep brand logo"
+                  />
+                  <img
+                    src="/img/brands/American/chevrolet.svg"
+                    class="chevrolet_brand"
+                    alt="chevrolet brand logo"
+                  />
+                  <img
+                    src="/img/brands/American/chrysler.svg"
+                    class="chrysler_brand"
+                    alt="chrysler brand logo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card_brands">
+                <div class="card-body_brands">
+                  <img
+                    src="/img/flags/japanese_flag.svg"
+                    class="japanese_flag"
+                    alt="japanese flag"
+                  />
+                  <h3 class="japanese_brands_cars">Japanese</h3>
+                  <img src="/img/divider.png" class="divider" alt="divider" />
+                  <p class="japanese_brands_article">
+                    Any spare parts for japanese<br />cars you can offer in our
+                    store.<br />Order now any parts for Honda,<br />Nissan and
+                    Toyota you need<br />right now.
+                  </p>
+                  <img src="/img/divider.png" class="divider" alt="divider" />
+                  <img
+                    src="/img/brands/Japanese/honda.svg"
+                    class="honda_brand"
+                    alt="honda brand logo"
+                  />
+                  <img
+                    src="/img/brands/Japanese/nissan.svg"
+                    class="nissan_brand"
+                    alt="nissan brand logo"
+                  />
+                  <img
+                    src="/img/brands/Japanese/toyota.svg"
+                    class="toyota_brand"
+                    alt="toyota brand logo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card_brands">
+                <div class="card-body_brands">
+                  <img
+                    src="/img/flags/eu_union_flag.svg"
+                    class="eu_flag"
+                    alt="eu flag"
+                  />
+                  <h3 class="eu_brands_cars">European</h3>
+                  <img src="/img/divider.png" class="divider" alt="divider" />
+                  <p class="eu_brands_article">
+                    Need to find new parts for your<br />Mercedes quickly? Want
+                    to find <br />engine parts for Audi, Volkswagen<br />or
+                    Volvo? Spare Parts will be <br />happy to help you.
+                  </p>
+                  <img src="/img/divider.png" class="divider" alt="divider" />
+                  <img
+                    src="/img/brands/European/mercedes-benz.svg"
+                    class="mercedes_brand"
+                    alt="mercedes brand logo"
+                  />
+                  <img
+                    src="/img/brands/European/audi.svg"
+                    class="audi_brand"
+                    alt="audi brand logo"
+                  />
+                  <img
+                    src="/img/brands/European/volkswagen.svg"
+                    class="volkswagen_brand"
+                    alt="volkswagen brand logo"
+                  />
+                  <img
+                    src="/img/brands/European/volvo.svg"
+                    class="volvo_brand"
+                    alt="volvo brand logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+            id="btn_next_slide_brands"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+              id="button_next_slide_brands"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+      </div>
 
+      <div class="request">
+        <p class="request_text">/ REQUEST</p>
+        <!-- white color -->
+        <h2 class="specific_spare_part">Need a Specific <br />Spare Part?</h2>
+        <p class="specific_part_order_text">
+          Press the button , fill out the form, and we'll find it for you!
+        </p>
+        <button class="request_parts_button">
+          <p class="request_parts_button_text">SEND A REQUEST</p>
+        </button>
+
+        <!-- OTHER PART MAYBE WILL BE A PIC -->
+      </div>
+
+      <div class="how_we_work">
+        <p class="how_we_work_text">/ HOW WE WORK</p>
+        <!-- red color -->
+        <h2 class="our_working_process">Our Working Process</h2>
+        <img
+          src="img/working_process_tyres_short.webp"
+          alt="tyres work"
+          class="tyres_work"
+        />
+        <img
+          src="img/working_process_tech_short.webp"
+          alt="tech work"
+          class="tech_work"
+        />
+        <img
+          src="img/how_we_work_list_part1.webp"
+          alt="how we work part 1"
+          class="how_we_work_list_part1"
+        />
+        <img
+          src="img/how_we_work_list_part2.webp"
+          alt="how we work part 2"
+          class="how_we_work_list_part2"
+        />
+      </div>
+
+      <div class="testimonials">
+        <p class="testimonials_text">/ TESTIMONIALS</p>
+        <!-- red color -->
+        <h2 class="what_people_say">What People Say</h2>
+        <div class="testimonials_list">
+          <img
+            src="img/testimonials_ann.webp"
+            alt="testimonials from customer Ann"
+            class="first_testiminials_ann"
+          />
+          <img
+            src="img/testimonials_jeff.webp"
+            alt="testimonials from customer Jeff"
+            class="second_testiminials_jeff"
+          />
+          <img
+            src="img/testimonials_dean.webp"
+            alt="testimonials from customer Dean"
+            class="third_testimonials_dean"
+          />
+        </div>
+      </div>
+
+      <div class="carousel_under_testimonials">
+        <!-- JS CAROUSEL SOON -->
+      </div>
     </main>
 
     <footer class="footer">
-        <div class="footer_grid_elements">
-            <div class="logo_and_text">
-                <img src="img/car-spare-parts_logo.svg" alt="car spare parts" class="footer_logo">
-                <p class="text_under_logo_footer">We are SpareParts, one of the best<br>companies in the USA offeringa the
-                    <br>widest selection of spare parts for your<br>car.
-                </p>
-                <!-- white color -->
-            </div>
-            <div class="about_us_section_footer">
-                <nav class="about_us_section_footer_nav">
-                    <ul>
-                        <li><a href="#" class="footer_nav_about_us">About us</a></li>
-                        <li><a href="#" class="footer_nav_amerian_brands">American Brands</a></li>
-                        <li><a href="#" class="footer_nav_japanese_brands">Japanese Brands</a></li>
-                        <li><a href="#" class="footer_nav_european_brands">European Brands</a></li>
-                        <!-- white color -->
-                    </ul>
-                </nav>
-            </div>
-            <div class="media_section_footer">
-                <nav class="media_section_footer_nav">
-                    <ul>
-                        <li><a href="#" class="footer_nav_videos">Videos</a></li>
-                        <li><a href="#" class="footer_nav_brands">Brands</a></li>
-                        <li><a href="#" class="footer_nav_testimonials">Testimonials</a></li>
-                        <li><a href="#" class="footer_nav_contacts">Contacts</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="social_icons_footer">
-                <p class="follow_us_footer">Follow Us</p>
-                <!-- white color -->
-                <div class="social_icons_section">
-                    <a href="facebook.com"> <img src="img/logo/facebook.webp" alt="facebook logo" class="facebook_logo_footer"> </a>
-                    <a href="instargam.com"> <img src="img/logo/instagram.webp" alt="instagram logo" class="instargam_logo_footer"> </a>
-                    <a href="youtube.com"> <img src="img/logo/youtube.webp" alt="youtube logo" class="youtube_logo_footer"> </a>
-                </div>
-            </div>
-
-            <div class="email_subscribe">
-                <p class="subscribe_text">
-                    Subscribe to get the latest<br>news from us
-                </p>
-                <form id="faq_form" action="https://formspree.io/f/mayaewbr" method="POST">
-
-                    <div class="email_input_form">
-                        <input type="text" name="Email" placeholder="     Email*" class="email_input" />
-                    </div>
-
-                    <div>
-                        <button form="faq_form" class="subscribe_button">SUBSCRIBE</button>
-                    </div>
-
-                </form>
-            </div>
+      <div class="footer_grid_elements">
+        <div class="logo_and_text">
+          <img
+            src="img/car-spare-parts_logo.svg"
+            alt="car spare parts"
+            class="footer_logo"
+          />
+          <p class="text_under_logo_footer">
+            We are SpareParts, one of the best<br />companies in the USA
+            offeringa the <br />widest selection of spare parts for your<br />car.
+          </p>
+          <!-- white color -->
+        </div>
+        <div class="about_us_section_footer">
+          <nav class="about_us_section_footer_nav">
+            <ul>
+              <li><a href="#" class="footer_nav_about_us">About us</a></li>
+              <li>
+                <a href="#" class="footer_nav_amerian_brands"
+                  >American Brands</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer_nav_japanese_brands"
+                  >Japanese Brands</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer_nav_european_brands"
+                  >European Brands</a
+                >
+              </li>
+              <!-- white color -->
+            </ul>
+          </nav>
+        </div>
+        <div class="media_section_footer">
+          <nav class="media_section_footer_nav">
+            <ul>
+              <li><a href="#" class="footer_nav_videos">Videos</a></li>
+              <li><a href="#" class="footer_nav_brands">Brands</a></li>
+              <li>
+                <a href="#" class="footer_nav_testimonials">Testimonials</a>
+              </li>
+              <li><a href="#" class="footer_nav_contacts">Contacts</a></li>
+            </ul>
+          </nav>
         </div>
 
-        <div class="copyright_info">
-
-            <p class="copyright">&copy; Created by Vladyslav S.</p>
-            <p class="all_rights_reserved">All rights Reserved</p>
+        <div class="social_icons_footer">
+          <p class="follow_us_footer">Follow Us</p>
+          <!-- white color -->
+          <div class="social_icons_section">
+            <a href="facebook.com">
+              <img
+                src="img/logo/facebook.webp"
+                alt="facebook logo"
+                class="facebook_logo_footer"
+              />
+            </a>
+            <a href="instargam.com">
+              <img
+                src="img/logo/instagram.webp"
+                alt="instagram logo"
+                class="instargam_logo_footer"
+              />
+            </a>
+            <a href="youtube.com">
+              <img
+                src="img/logo/youtube.webp"
+                alt="youtube logo"
+                class="youtube_logo_footer"
+              />
+            </a>
+          </div>
         </div>
 
+        <div class="email_subscribe">
+          <p class="subscribe_text">
+            Subscribe to get the latest<br />news from us
+          </p>
+          <form
+            id="faq_form"
+            action="https://formspree.io/f/mayaewbr"
+            method="POST"
+          >
+            <div class="email_input_form">
+              <input
+                type="text"
+                name="Email"
+                placeholder="     Email*"
+                class="email_input"
+              />
+            </div>
+
+            <div>
+              <button form="faq_form" class="subscribe_button">
+                SUBSCRIBE
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="copyright_info">
+        <p class="copyright">&copy; Created by Vladyslav S.</p>
+        <p class="all_rights_reserved">All rights Reserved</p>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/index.js"></script>
-</body>
-
+  </body>
 </html>
